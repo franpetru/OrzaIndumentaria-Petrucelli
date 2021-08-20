@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+.headerMain{
+    background-color: rgba(64, 35, 97, 0.699);
+    display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+}
+.tituloName{
+    color: white;
+    margin-left: 10px;
+}
+.navBar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    padding: 10px;
+    
+    font-size: large;
+}
+.iconCart{
+    font-size: 20px;
+    color: white;
+}
+.navBar a{
+    color: white;
+    padding: 0 15px;
+}
+.navBar a:hover, .iconCart:hover{
+    color: rgb(22, 22, 22);
+}
+.h1{
+    color: white;
+}
+.tituloContador{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.numeroContador{
+    padding: 0px 20px;
+}
+.divContador{
+    padding: 10px 20px;
+    background-color: rgba(64, 35, 97, 0.699);
+    color: white;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.btnIcon{
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: black;
+}
+.iconMenos{
+    padding-top: 5px;
+    width: 35px;
+    height: 35px;
+}
+.iconMas{
+    padding-top: 5px;
+    width: 35px;
+    height: 35px;
+}
+.btnAgregarCarrito{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.itemsContainer{
+    display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+}
+.itemListContainer-title{
+    display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+}
+.itemCard{
+    width: 400px;
+    height: 500px;
+    margin-top: 50px;
+    
+}
+.itemTitle{
+    text-align: center;
+}
+.itemImg{
+    width: 400px;
+    height: 100%;
+}
