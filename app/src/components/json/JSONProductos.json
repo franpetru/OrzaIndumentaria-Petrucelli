@@ -49,7 +49,7 @@
     {
         "id":6,
         "title":"Pica Oreo",
-        "pictureUrlUrl":"./img/productos/oreo/oreoIndex.jpg",
+        "pictureUrl":"./img/productos/oreo/oreoIndex.jpg",
         "imagen2":"img/productos/oreo/oreo2.jpg",
         "imagen3":"img/productos/oreo/oreo3.jpg",
         "categoria": 2,

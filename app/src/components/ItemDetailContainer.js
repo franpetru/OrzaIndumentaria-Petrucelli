@@ -1,21 +1,21 @@
-import React, { useEffect, useState } from "react";
-import Data from "./json/JSONProductos.json";
-import ItemDetail from "./ItemDetail";
-import { useParams } from "react-router-dom";
+import React, { useEffect, useState } from "react"
+import Data from "./json/JSONProductos.json"
+import ItemDetail from "./ItemDetail"
 
 
 const ItemDetailContainer = () => {
 
-  const [itemDetail,setItemsDetail] = useState([])
-  const params = useParams()
-  
-  useEffect(() => {
+const [itemDetail,setItemsDetail] = useState()
 
-    console.log(Data)
+console.log(Data)
+
+useEffect(() => {
+
+    
 
     setTimeout(() => {
         Promise
-            .resolve(Data)
+            .resolve.filter(Data.id)
             .then(response => {
                 setItemsDetail(response)
             })
@@ -23,12 +23,12 @@ const ItemDetailContainer = () => {
 
 }, [])
 
-  return (
-      <div>
-          <p>Detalle Item</p>
-          <ItemDetail itemDetail={itemDetail}/>
-      </div>
-  );
+return (
+            <div>
+                <p>Detalle Item</p>
+                <ItemDetail itemDetails={itemDetail}/>
+            </div>
+        );
 }
 
 export default ItemDetailContainer;

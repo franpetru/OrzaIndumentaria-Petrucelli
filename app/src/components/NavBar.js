@@ -5,8 +5,8 @@ const NavBar = () => {
     return  <>
                 <nav className="navBar">
                     <NavLink to="/" exact>Inicio</NavLink>
-                    <Link to="/item/:precio">Categoria 1</Link>
-                    <Link to="/item/:id">Categoria 2</Link>
+                    <Link to="/categoria/1">Categoria 1</Link>
+                    <Link to="/categoria/2">Categoria 2</Link>
                     <CartWidget/>
                 </nav>
             </>;
