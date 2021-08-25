@@ -15,7 +15,7 @@ useEffect(() => {
 
     setTimeout(() => {
         Promise
-            .resolve.filter(Data.id)
+            .resolve(Data)
             .then(response => {
                 setItemsDetail(response)
             })
