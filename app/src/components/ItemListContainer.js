@@ -23,8 +23,8 @@ const ItemListContainer = () => {
       const promesa = new Promise((res,rej)=>{
           setTimeout(() => {
 
-              if(params.id){
-                  res(Data.filter(producto=>producto.id == params.id))
+              if(params.categoria){
+                  res(Data.filter(producto=>producto.categoria == params.categoria))
               }
               else{
                   res(Data)
