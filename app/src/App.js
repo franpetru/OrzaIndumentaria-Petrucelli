@@ -6,14 +6,16 @@ import { BrowserRouter, Route, Switch } from "react-router-dom"
 
 const App = () => {
 
+
+
 return (
         <>
         <BrowserRouter>
             <Header/>
             <Switch>
                 <Route path="/" component={ItemListContainer} exact />
-                <Route path="/categoria/:id" component={ItemListContainer} />
-                <Route path="/item/:id" component={ItemDetailContainer} />
+                <Route path="/categoria/:categoria" component={ItemListContainer} />
+                <Route path="/categoria/:categoria" component={ItemListContainer} />
             </Switch>
         </BrowserRouter>
             
