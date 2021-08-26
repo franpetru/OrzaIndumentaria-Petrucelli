@@ -1,14 +1,16 @@
-import React from "react"
+import { useLocation } from "react-router-dom";
 
-const ItemDetail = ({itemDetail}) => {
+const ItemDetail = () => {
 
+    const location = useLocation();
+    const item = location.state
+console.log(location)
     return (
-        <li className="itemsDetail">
-            <h3>{itemDetail.title}</h3>
-            <img src={itemDetail.pictureURL} alt="" />
-            <h4>{itemDetail.price}</h4>
-        </li>
-    )
-
+        <article>
+            <h3>{item.title}</h3>
+            <img src={item.pictureUrl} alt="" />
+            <h4>{item.price}</h4>
+        </article>
+    );
 }
 export default ItemDetail

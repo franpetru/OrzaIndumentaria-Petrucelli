@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react"
-import Data from "./json/JSONProductos.json"
-import ItemDetailList from "./ItemDetailList"
+import Data from "../components/json/JSONProductos.json"
+import ItemDetail from "./ItemDetail"
 import { useParams } from "react-router-dom";
-
 
 const ItemDetailContainer = () => {
 
-const [itemDetail,setItemsDetail] = useState()
+const [itemsDetail,setItemsDetail] = useState()
 const params = useParams()
 
 console.log(Data)
@@ -17,8 +16,8 @@ useEffect(() => {
 
     setTimeout(() => {
             if(params.id){
-            Promise
-            .resolve(Data.find(producto=>producto.id === params.id))
+            fetch()
+            .resolve(Data.find(producto=>producto.id == params.id))
             .then(response => {
                 setItemsDetail(response)
             })}
@@ -26,12 +25,12 @@ useEffect(() => {
 
 }, [])
 
-return (
-            <div>
-                <p>Detalle Item</p>
-                <ItemDetailList itemDetail={itemDetail}/>
-            </div>
-        );
+return (  
+    <div>
+      <h2 className="itemDetailContainer-title">Item Detail Container</h2>
+      <ItemDetail itemDetail={itemsDetail}/>
+    </div>
+  );
 }
 
 export default ItemDetailContainer;

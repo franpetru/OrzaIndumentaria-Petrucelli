@@ -2,7 +2,6 @@ import Item from "./Item"
 
 
 const ItemList = ({items}) => {
-    console.log({items})
     return (
         <div className="itemsContainer">
             {items.map(item=>{
