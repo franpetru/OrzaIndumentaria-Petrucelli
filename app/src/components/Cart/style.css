@@ -1,0 +1,17 @@
+.itemCartContainer{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(64, 35, 97, 0.5);
+}
+.itemCartTitle{
+    display: flex;
+        align-items: center;
+        justify-items: center;
+    text-transform: uppercase;
+    width: 200px;
+}
+.imagenCarrito{
+    width: 1fr;
+    width: 100px;
+}

@@ -1,0 +1,52 @@
+.tituloContador{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.numeroContador{
+    padding: 0px 20px;
+}
+.divContador{
+    width: 20vw;
+    padding: 10px 20px;
+    background-color: rgba(64, 35, 97, 0.699);
+    color: white;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+}
+.btnIcon{
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: black;
+}
+.iconMenos{
+    padding-top: 5px;
+    width: 35px;
+    height: 35px;
+}
+.iconMas{
+    padding-top: 5px;
+    width: 35px;
+    height: 35px;
+}
+.stockDisponibleTxt{
+    display: flex;
+    align-self: center;
+    align-content: center;
+}
+.btnAgregarCarritoContainer{
+    align-self: center;
+    padding: 20px;
+}
+.btnAgregarCarrito{
+    width: 200px;
+    background-color: rgba(64, 35, 97, 0.699);
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    display: flex;
+        justify-content: center;
+}

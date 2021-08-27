@@ -1,0 +1,13 @@
+.itemCard{
+    width: 400px;
+    height: 500px;
+    margin-top: 50px;
+    
+}
+.itemTitle{
+    text-align: center;
+}
+.itemImg{
+    width: 400px;
+    height: 100%;
+}
